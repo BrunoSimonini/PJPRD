@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="CV_CLIENTES" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="CV_CLIENTES"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="HDW_CLIENTES">
+    <resourceUri>HDW_CLIENTES</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+
+<logicalModel id="HDW_CLIENTES">
+  <attributes>
+    <attribute id="ID" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ID"/>
+      <keyMapping columnObjectName="HDW_CLIENTES" columnName="ID"/>
+    </attribute>
+    <attribute id="Cliente" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Cliente"/>
+      <keyMapping columnObjectName="HDW_CLIENTES" columnName="Cliente"/>
+    </attribute>
+    <attribute id="Idade" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Idade"/>
+      <keyMapping columnObjectName="HDW_CLIENTES" columnName="Idade"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+    
+  </shapes>
+</layout>
+</Calculation:scenario>
